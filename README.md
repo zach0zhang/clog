@@ -14,7 +14,7 @@ clog's level is defined according to syslog:
     If you do not want to do that, just go to step 2, and compile them to a link library.
 
 2. autoreconf -fiv
-3. ./configure --host=arm-linux-gnueabihf --prefix=$PWD/install/ CFLAHS="-std=gnu99" 
+3. ./configure --host=arm-linux-gnueabihf --prefix=$PWD/install/ CFLAGS="-std=gnu99" 
 
     (take arm-linux-gnueabihf-gcc to compile project and store the result files in ./install/ as an example)
 3. make clean; make; make install
